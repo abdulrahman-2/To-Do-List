@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, Tahoma;
+}
+.to-do-list {
+  width: 600px;
+  margin: 100px auto;
+  background-color: #eee;
+}
+.add-task {
+  background-color: #009688;
+  position: relative;
+  padding: 1rem;
+}
+.add-task input {
+  padding: 10px 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: calc(100% - 50px);
+  color: #fff;
+  font-size: 20px;
+}
+.add-task input:focus {
+  outline: none;
+}
+.add-task .plus {
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  background-color: #fff;
+  right: 12px;
+  border-radius: 50%;
+  line-height: 43px;
+  text-align: center;
+  color: #009688;
+  cursor: pointer;
+  font-size: 38px;
+  font-weight: bold;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  transition: transform 0.3s;
+}
+.add-task .plus:hover {
+  transform: rotate(90deg);
+}
+.tasks-content {
+  background-color: #f6f6f6;
+  padding: 1rem;
+}
+.no-task .no-tasks-message {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.no-tasks-message {
+  opacity: 0.5;
+}
+.task {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task:not(:last-child) {
+  margin-bottom: 10px;
+}
+.task .task-name {
+  cursor: pointer;
+}
+.task button {
+  background-color: #e91e63;
+  padding: 4px 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+.finished {
+  text-decoration: line-through;
+}
+.all-task-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+.all-task-action button {
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+.all-task-action .delete-all {
+  background-color: #e91e63;
+}
+.all-task-action .finish-all {
+  background-color: #03a9f4;
+}
+.task-stats {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+.task-stats span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 16px;
+  color: white;
+}
+.task-stats .tasks-count span {
+  background-color: #e91e63;
+}
+.task-stats .tasks-completed span {
+  background-color: #03a9f4;
+}
